@@ -1,0 +1,86 @@
+{
+  "schemes" : [
+    {
+      "scrolling" : {
+        "speed" : {
+          "vertical" : 14.23
+        },
+        "distance" : {
+          "vertical" : "auto"
+        },
+        "acceleration" : {
+          "vertical" : 0.39
+        },
+        "modifiers" : {
+          "vertical" : {
+            "command" : {
+              "type" : "changeSpeed",
+              "scale" : 3
+            }
+          }
+        },
+        "reverse" : {
+          "vertical" : true
+        }
+      },
+      "if" : {
+        "device" : {
+          "vendorID" : "0x46d",
+          "productID" : "0xc539",
+          "productName" : "USB Receiver",
+          "category" : "mouse"
+        }
+      },
+      "pointer" : {
+        "acceleration" : 0,
+        "speed" : 0.1601,
+        "disableAcceleration" : false
+      }
+    },
+    {
+      "if" : {
+        "device" : {
+          "productID" : "0xc090",
+          "category" : "mouse",
+          "productName" : "G703 LIGHTSPEED Wireless Gaming Mouse w\/ HERO",
+          "vendorID" : "0x46d",
+          "serialNumber" : "B4F151A5"
+        }
+      },
+      "scrolling" : {
+        "distance" : {
+          "vertical" : 2
+        },
+        "speed" : {
+          "vertical" : 0
+        },
+        "reverse" : {
+          "vertical" : true
+        },
+        "acceleration" : {
+          "vertical" : 1
+        }
+      },
+      "pointer" : {
+        "acceleration" : 0,
+        "speed" : 0.118
+      }
+    },
+    {
+      "if" : {
+        "device" : {
+          "category" : "trackpad",
+          "vendorID" : "0x5ac",
+          "productName" : "Apple Internal Keyboard \/ Trackpad",
+          "productID" : "0x341"
+        }
+      },
+      "scrolling" : {
+        "acceleration" : {
+          "vertical" : 1
+        }
+      }
+    }
+  ],
+  "$schema" : "https:\/\/schema.linearmouse.app\/0.9.5"
+}
