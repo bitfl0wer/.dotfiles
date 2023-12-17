@@ -1,5 +1,9 @@
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:/usr/local/bin:$HOME/.cargo/bin:/opt/homebrew/bin:$PATH:/opt/local/bin:/opt/local/sbin:/Users/star/Library/Python/3.9/bin
+export PATH=$HOME/bin:/usr/local/bin:$HOME/.cargo/bin:/opt/homebrew/bin:/opt/local/bin:/opt/local/sbin:/Users/star/Library/Python/3.9/bin:$HOME/.android-cmdline-tools/bin:/opt/homebrew/opt/curl/bin:$PATH 
+export ANDROID_HOME=$HOME/.android-cmdline-tools/bin
+export NDK_HOME=$HOME/.android-cmdline-tools/ndk-bundle
+export LDFLAGS="-L/opt/homebrew/opt/curl/lib"
+export CPPFLAGS="-I/opt/homebrew/opt/curl/include"
 
 alias ls="exa -aF --color=always"
 alias update="sudo port selfupdate && sudo port upgrade outdated && brew update && brew upgrade && brew cleanup"
@@ -31,3 +35,4 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 eval "$(starship init zsh)"
+export PATH="/opt/homebrew/opt/curl/bin:$PATH"
