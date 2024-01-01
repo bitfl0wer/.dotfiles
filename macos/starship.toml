@@ -1,4 +1,4 @@
-command_timeout = 1500
+command_timeout = 2500
 format = """
 [](#9A348E)\
 $os\
