@@ -1,10 +1,11 @@
-# If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:/usr/local/bin:$HOME/.cargo/bin:/opt/homebrew/bin:/opt/local/bin:/opt/local/sbin:/Users/star/Library/Python/3.9/bin:$HOME/.android-cmdline-tools/bin:/opt/homebrew/opt/curl/bin:$PATH 
-export ANDROID_HOME=$HOME/.android-cmdline-tools/bin
-export NDK_HOME=$HOME/.android-cmdline-tools/ndk-bundle
-export LDFLAGS="-L/opt/homebrew/opt/curl/lib"
-export CPPFLAGS="-I/opt/homebrew/opt/curl/include"
-
+# macOS Path and ENV variables
+if [[ "$OSTYPE" == "darwin"* ]]; then
+    export PATH=$HOME/bin:/usr/local/bin:$HOME/.cargo/bin:/opt/homebrew/bin:/opt/local/bin:/opt/local/sbin:/Users/star/Library/Python/3.9/bin:$HOME/.android-cmdline-tools/bin:/opt/homebrew/opt/curl/bin:$PATH
+    export ANDROID_HOME=$HOME/.android-cmdline-tools/bin
+    export NDK_HOME=$HOME/.android-cmdline-tools/ndk-bundle
+    export LDFLAGS="-L/opt/homebrew/opt/curl/lib"
+    export CPPFLAGS="-I/opt/homebrew/opt/curl/include"
+fi
 alias ls="exa -aF --color=always"
 alias update="sudo port selfupdate && sudo port upgrade outdated && brew update && brew upgrade && brew cleanup"
 alias cat="bat"
